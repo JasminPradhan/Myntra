@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.flex{
+    display: flex;
+}
+.items-center{
+align-items: center;
+} 
+.justify-center{
+justify-content: flex-start;
+}
+.space-between{
+    justify-content: space-between;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.semibold{
+    font-weight: 1200;
+}
+/* .mx-2{
+    margin-left: 12px;
+    margin-right: 12px;
+} */
+@media screen and (max-width:1600px) and (min-width:1201px) {
+    .header{
+
+        height: 80px;
+        font-size: 3.5vw;
+    }
+    .side_bar{
+        display: none;
+    }
+    .mynlogo_mediaquery{
+        display: none;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:1000px) {
+    .header{
+        flex-direction: column;
+        height: 60px;
+        font-size: 3vw;
+    }
+    #men, #women, #kid, #beauty, #studio, #home {
+        padding: 0px 7px 22px 7px;
+    }
+    .container{
+        padding: 0 2vw;
+        margin: auto;
+    }
+    figcaption{
+        display: none;
+    }
+    .mx-2{
+        font-size: smaller;
+        /* flex-direction: row; */
+        margin: 0px 7px;
+    }
+    .search{
+        margin-right: 22px;
+        line-height: 20px;
+    }
+    .side_bar{
+        display: none;
+    }
+    .mynlogo_mediaquery{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:800px){
+    .header{
+        flex-direction: column;
+        height: 56px;
+        font-size: 3vw;
+    }
+    .mx-1{
+        display: none;
+    }
+    .left:before{
+        background: url(flaticon.png) left center no-repeat;
+        padding-right: 20px;
+    }
+    .search{
+        width: 480px;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .mx-2{
+        font-size: smaller;
+        /* flex-direction: row; */
+        margin: 0px 4px;
+    }
+    figcaption{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .mynlogo_mediaquery{
+        text-transform: uppercase;
+        margin-left: 20px;
+        padding-bottom: 25px;
+        font-size: medium;
+        letter-spacing: 1.0em;
+    }
+}
+@media screen and (max-width:799px) and (min-width:500px){
+    .header{
+        flex-direction: column;
+        height: 56px;
+        font-size: 3vw;
+        overflow: hidden;
+        width: 100%;
+    }
+    .section1,.section2,.section3,.section4,.section5,.section6{
+        width: 100%;
+    }
+    .mx-1{
+        display: none;
+    }
+    .left:before{
+        background: url(flaticon.png) left center no-repeat;
+        padding-right: 20px;
+    }
+    .search{
+        width: 480px;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .mx-2{
+        font-size: smaller;
+        /* flex-direction: row; */
+        margin: 0px 4px;
+    }
+    figcaption{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .mynlogo_mediaquery{
+        text-transform: uppercase;
+        margin-left: 20px;
+        padding-bottom: 25px;
+        font-size: medium;
+        letter-spacing: 0.7em;
+    }
+}

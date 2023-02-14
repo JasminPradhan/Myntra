@@ -20,10 +20,6 @@ justify-content: flex-start;
 .semibold{
     font-weight: 1200;
 }
-/* .mx-2{
-    margin-left: 12px;
-    margin-right: 12px;
-} */
 @media screen and (max-width:1600px) and (min-width:1201px) {
     .header{
 
@@ -55,7 +51,6 @@ justify-content: flex-start;
     }
     .mx-2{
         font-size: smaller;
-        /* flex-direction: row; */
         margin: 0px 7px;
     }
     .search{
@@ -79,7 +74,7 @@ justify-content: flex-start;
         display: none;
     }
     .left:before{
-        background: url(flaticon.png) left center no-repeat;
+        background: url(../images/flaticon.png) left center no-repeat;
         padding-right: 20px;
     }
     .search{
@@ -121,7 +116,7 @@ justify-content: flex-start;
         display: none;
     }
     .left:before{
-        background: url(flaticon.png) left center no-repeat;
+        background: url(../images/flaticon.png) left center no-repeat;
         padding-right: 20px;
     }
     .search{

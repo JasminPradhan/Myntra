@@ -18,14 +18,15 @@ window.addEventListener("scroll", function() {
 let slideIndex = 0;//for automatic slide display
 let slideIndexCurrent = 0;//for manual slide display
 
-const slides = document.getElementsByClassName("mySlides");
-const dots = document.getElementsByClassName("dot");
-
 showSlides();//for automatic slide display
+
+const currentSlide=(n)=>{
+    showSlidesCurrent(slideIndexCurrent=n)
+}
 
 //manual 
 
-function currentSlide(n) {
+function showSlidesCurrent(n) {
     //precautionary steps
     slideIndexCurrent = n;
 
@@ -37,10 +38,11 @@ function currentSlide(n) {
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slideIndex++;//after clicking on button x the next slide be index x+1: this is automatic
+    slideIndex++;
 
-    for (let i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
+        slideIndex++;
     }
 
     slides[slideIndexCurrent - 1].style.display = "block";
@@ -53,12 +55,15 @@ function currentSlide(n) {
 //auto 
 
 function showSlides() {
-    if (slideIndex > slides.length) { slideIndex = 1 }
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
 
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slideIndex++;
+
+    if(slideIndex>slides.length){slideIndex=1}
 
     for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
